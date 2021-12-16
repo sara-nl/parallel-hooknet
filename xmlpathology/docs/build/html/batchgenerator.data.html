@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>batchgenerator.data package &#8212; batchgenerator 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="batchgenerator-data-package">
+<h1>batchgenerator.data package<a class="headerlink" href="#batchgenerator-data-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-batchgenerator.data.dataset">
+<span id="batchgenerator-data-dataset-module"></span><h2>batchgenerator.data.dataset module<a class="headerlink" href="#module-batchgenerator.data.dataset" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="batchgenerator.data.dataset.DataSet">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.dataset.</code><code class="sig-name descname">DataSet</code><span class="sig-paren">(</span><em class="sig-param">mode, data_source, label_map, annotation_parser_loader=&lt;batchgenerator.data.wholeslideannotation.AnnotationParserLoader object&gt;, annotation_types=['polygon'], open_images_ahead=False</em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.dataset.DataSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.annotation_parser_loader">
+<em class="property">property </em><code class="sig-name descname">annotation_parser_loader</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.annotation_parser_loader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.annotation_types">
+<em class="property">property </em><code class="sig-name descname">annotation_types</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.annotation_types" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.close_images">
+<code class="sig-name descname">close_images</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.close_images" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.counts">
+<em class="property">property </em><code class="sig-name descname">counts</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.counts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.counts_per_label">
+<em class="property">property </em><code class="sig-name descname">counts_per_label</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.counts_per_label" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.data_source">
+<em class="property">property </em><code class="sig-name descname">data_source</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.data_source" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.get_image_path">
+<code class="sig-name descname">get_image_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_source_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.get_image_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.get_mask_path">
+<code class="sig-name descname">get_mask_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_source_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.get_mask_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.image_annotations">
+<em class="property">property </em><code class="sig-name descname">image_annotations</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.image_annotations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.images">
+<em class="property">property </em><code class="sig-name descname">images</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.images" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.label_map">
+<em class="property">property </em><code class="sig-name descname">label_map</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.label_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.labels">
+<em class="property">property </em><code class="sig-name descname">labels</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.labels" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.mode">
+<em class="property">property </em><code class="sig-name descname">mode</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.open_images_ahead">
+<em class="property">property </em><code class="sig-name descname">open_images_ahead</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.open_images_ahead" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.pixels_per_label">
+<em class="property">property </em><code class="sig-name descname">pixels_per_label</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.pixels_per_label" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.dataset.DataSet.samples">
+<em class="property">property </em><code class="sig-name descname">samples</code><a class="headerlink" href="#batchgenerator.data.dataset.DataSet.samples" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.dataset.DataSetLoader">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.dataset.</code><code class="sig-name descname">DataSetLoader</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_class</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.dataset.DataSetLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="batchgenerator.data.dataset.create_new_datasets">
+<code class="sig-prename descclassname">batchgenerator.data.dataset.</code><code class="sig-name descname">create_new_datasets</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datasets</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.dataset.create_new_datasets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-batchgenerator.data.wholeslideannotation">
+<span id="batchgenerator-data-wholeslideannotation-module"></span><h2>batchgenerator.data.wholeslideannotation module<a class="headerlink" href="#module-batchgenerator.data.wholeslideannotation" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideannotation.AnnotationParser">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideannotation.</code><code class="sig-name descname">AnnotationParser</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">label_map</span></em>, <em class="sig-param"><span class="n">sort_by</span><span class="o">=</span><span class="default_value">'label_map'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.AnnotationParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.AnnotationParser.parse">
+<em class="property">abstract </em><code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.AnnotationParser.parse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.AnnotationParser.sort_by">
+<em class="property">property </em><code class="sig-name descname">sort_by</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.AnnotationParser.sort_by" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideannotation.AnnotationParserLoader">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideannotation.</code><code class="sig-name descname">AnnotationParserLoader</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_class</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.AnnotationParserLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideannotation.AsapAnnotationParser">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideannotation.</code><code class="sig-name descname">AsapAnnotationParser</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">label_map</span></em>, <em class="sig-param"><span class="n">sort_by</span><span class="o">=</span><span class="default_value">'label_map'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.AsapAnnotationParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#batchgenerator.data.wholeslideannotation.AnnotationParser" title="batchgenerator.data.wholeslideannotation.AnnotationParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">batchgenerator.data.wholeslideannotation.AnnotationParser</span></code></a></p>
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.AsapAnnotationParser.parse">
+<code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.AsapAnnotationParser.parse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideannotation.JsonAnnotationParser">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideannotation.</code><code class="sig-name descname">JsonAnnotationParser</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">label_map</span></em>, <em class="sig-param"><span class="n">sort_by</span></em>, <em class="sig-param"><span class="n">rect_margin</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.JsonAnnotationParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#batchgenerator.data.wholeslideannotation.AnnotationParser" title="batchgenerator.data.wholeslideannotation.AnnotationParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">batchgenerator.data.wholeslideannotation.AnnotationParser</span></code></a></p>
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.JsonAnnotationParser.parse">
+<code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.JsonAnnotationParser.parse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideannotation.Point">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideannotation.</code><code class="sig-name descname">Point</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">xml_path</span></em>, <em class="sig-param"><span class="n">index</span></em>, <em class="sig-param"><span class="n">label_name</span></em>, <em class="sig-param"><span class="n">label_value</span></em>, <em class="sig-param"><span class="n">coordinates</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">shapely.geometry.point.Point</span></code></p>
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Point.center">
+<em class="property">property </em><code class="sig-name descname">center</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Point.center" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Point.coordinates">
+<code class="sig-name descname">coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Point.coordinates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Point.index">
+<em class="property">property </em><code class="sig-name descname">index</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Point.index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Point.label_name">
+<em class="property">property </em><code class="sig-name descname">label_name</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Point.label_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Point.label_value">
+<em class="property">property </em><code class="sig-name descname">label_value</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Point.label_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Point.type">
+<em class="property">property </em><code class="sig-name descname">type</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Point.type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideannotation.</code><code class="sig-name descname">Polygon</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">xml_path</span></em>, <em class="sig-param"><span class="n">index</span></em>, <em class="sig-param"><span class="n">label_name</span></em>, <em class="sig-param"><span class="n">label_value</span></em>, <em class="sig-param"><span class="n">coordinates</span></em>, <em class="sig-param"><span class="n">holes</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">fill_color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">line_color</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">shapely.geometry.polygon.Polygon</span></code></p>
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.add_overlapping_annotations">
+<code class="sig-name descname">add_overlapping_annotations</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">overlap_annotations</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.add_overlapping_annotations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.bounds">
+<em class="property">property </em><code class="sig-name descname">bounds</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.bounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns minimum bounding region (minx, miny, maxx, maxy)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.center">
+<em class="property">property </em><code class="sig-name descname">center</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.center" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.centroid">
+<em class="property">property </em><code class="sig-name descname">centroid</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.centroid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the geometric center of the object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.contains">
+<code class="sig-name descname">contains</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_annotation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.contains" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if the geometry contains the other, else False</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.coordinates">
+<code class="sig-name descname">coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.coordinates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.holes">
+<code class="sig-name descname">holes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.holes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.index">
+<em class="property">property </em><code class="sig-name descname">index</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.label_name">
+<em class="property">property </em><code class="sig-name descname">label_name</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.label_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.label_value">
+<em class="property">property </em><code class="sig-name descname">label_value</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.label_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.load_density">
+<code class="sig-name descname">load_density</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">downsampling_ratio</span><span class="o">=</span><span class="default_value">8</span></em>, <em class="sig-param"><span class="n">gauss_sigma</span><span class="o">=</span><span class="default_value">10, 10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.load_density" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.overlapping_annotations">
+<em class="property">property </em><code class="sig-name descname">overlapping_annotations</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.overlapping_annotations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.size">
+<em class="property">property </em><code class="sig-name descname">size</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.type">
+<em class="property">property </em><code class="sig-name descname">type</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.Polygon.xy">
+<em class="property">property </em><code class="sig-name descname">xy</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Polygon.xy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Separate arrays of X and Y coordinate values</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideannotation.QuPathParser">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideannotation.</code><code class="sig-name descname">QuPathParser</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">label_map</span></em>, <em class="sig-param"><span class="n">sort_by</span><span class="o">=</span><span class="default_value">'label_map'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.QuPathParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#batchgenerator.data.wholeslideannotation.AnnotationParser" title="batchgenerator.data.wholeslideannotation.AnnotationParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">batchgenerator.data.wholeslideannotation.AnnotationParser</span></code></a></p>
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.QuPathParser.parse">
+<code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.QuPathParser.parse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideannotation.VirtumAnnotationParser">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideannotation.</code><code class="sig-name descname">VirtumAnnotationParser</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">label_map</span></em>, <em class="sig-param"><span class="n">sort_by</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.VirtumAnnotationParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#batchgenerator.data.wholeslideannotation.AnnotationParser" title="batchgenerator.data.wholeslideannotation.AnnotationParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">batchgenerator.data.wholeslideannotation.AnnotationParser</span></code></a></p>
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.VirtumAnnotationParser.parse">
+<code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.VirtumAnnotationParser.parse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideannotation.WSIAnnotationParser">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideannotation.</code><code class="sig-name descname">WSIAnnotationParser</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">label_map</span></em>, <em class="sig-param"><span class="n">sort_by</span><span class="o">=</span><span class="default_value">'label_map'</span></em>, <em class="sig-param"><span class="n">tile_shape</span><span class="o">=</span><span class="default_value">256, 256</span></em>, <em class="sig-param"><span class="n">shift</span><span class="o">=</span><span class="default_value">256</span></em>, <em class="sig-param"><span class="n">spacing</span><span class="o">=</span><span class="default_value">0.5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WSIAnnotationParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#batchgenerator.data.wholeslideannotation.AnnotationParser" title="batchgenerator.data.wholeslideannotation.AnnotationParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">batchgenerator.data.wholeslideannotation.AnnotationParser</span></code></a></p>
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WSIAnnotationParser.parse">
+<code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WSIAnnotationParser.parse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideannotation.</code><code class="sig-name descname">WholeSlideAnnotation</code><span class="sig-paren">(</span><em class="sig-param">data_source_id, image_path, annotation_path, label_map, annotation_types=['polygon'], density_values=(8, (4, 4)), annotation_parser_loader=&lt;batchgenerator.data.wholeslideannotation.AnnotationParserLoader object&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class contains all annotations of an image.</p>
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.annotation_path">
+<em class="property">property </em><code class="sig-name descname">annotation_path</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.annotation_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.count_per_class">
+<em class="property">property </em><code class="sig-name descname">count_per_class</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.count_per_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.counts">
+<em class="property">property </em><code class="sig-name descname">counts</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.counts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.data_source_id">
+<em class="property">property </em><code class="sig-name descname">data_source_id</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.data_source_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.downsamplings">
+<em class="property">property </em><code class="sig-name descname">downsamplings</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.downsamplings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.get_downsampling_from_level">
+<code class="sig-name descname">get_downsampling_from_level</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">level</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.get_downsampling_from_level" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.get_level_from_spacing">
+<code class="sig-name descname">get_level_from_spacing</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spacing</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.get_level_from_spacing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.get_ratio">
+<code class="sig-name descname">get_ratio</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spacing</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.get_ratio" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.image_path">
+<em class="property">property </em><code class="sig-name descname">image_path</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.image_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.label_map">
+<em class="property">property </em><code class="sig-name descname">label_map</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.label_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.select_annotations">
+<code class="sig-name descname">select_annotations</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">center_x</span></em>, <em class="sig-param"><span class="n">center_y</span></em>, <em class="sig-param"><span class="n">width</span></em>, <em class="sig-param"><span class="n">height</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.select_annotations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.spacings">
+<em class="property">property </em><code class="sig-name descname">spacings</code><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.WholeSlideAnnotation.spacings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideannotation.Within">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideannotation.</code><code class="sig-name descname">Within</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">o</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.Within" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="batchgenerator.data.wholeslideannotation.create_annotation">
+<code class="sig-prename descclassname">batchgenerator.data.wholeslideannotation.</code><code class="sig-name descname">create_annotation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">xml_path</span></em>, <em class="sig-param"><span class="n">annotation_type</span></em>, <em class="sig-param"><span class="n">index</span></em>, <em class="sig-param"><span class="n">label_name</span></em>, <em class="sig-param"><span class="n">label_value</span></em>, <em class="sig-param"><span class="n">coordinates</span></em>, <em class="sig-param"><span class="n">holes</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideannotation.create_annotation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-batchgenerator.data.wholeslideimage">
+<span id="batchgenerator-data-wholeslideimage-module"></span><h2>batchgenerator.data.wholeslideimage module<a class="headerlink" href="#module-batchgenerator.data.wholeslideimage" title="Permalink to this headline">¶</a></h2>
+<dl class="py exception">
+<dt id="batchgenerator.data.wholeslideimage.InvalidSpacingError">
+<em class="property">exception </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideimage.</code><code class="sig-name descname">InvalidSpacingError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image_path</span></em>, <em class="sig-param"><span class="n">spacing</span></em>, <em class="sig-param"><span class="n">spacings</span></em>, <em class="sig-param"><span class="n">margin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideimage.InvalidSpacingError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="batchgenerator.data.wholeslideimage.InvalidSpacingUnitError">
+<em class="property">exception </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideimage.</code><code class="sig-name descname">InvalidSpacingUnitError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image_path</span></em>, <em class="sig-param"><span class="n">spacing_unit</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideimage.InvalidSpacingUnitError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">KeyError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="batchgenerator.data.wholeslideimage.UnsupportedExtensionError">
+<em class="property">exception </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideimage.</code><code class="sig-name descname">UnsupportedExtensionError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image_path</span></em>, <em class="sig-param"><span class="n">extension</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideimage.UnsupportedExtensionError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">KeyError</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImage">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideimage.</code><code class="sig-name descname">WholeSlideImage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image_path</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">spacing_margin_ratio</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">0.1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImage.downsamplings">
+<em class="property">property </em><code class="sig-name descname">downsamplings</code><a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImage.downsamplings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImage.extension">
+<em class="property">property </em><code class="sig-name descname">extension</code><a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImage.extension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImage.filepath">
+<em class="property">property </em><code class="sig-name descname">filepath</code><a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImage.filepath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImage.get_downsampling_from_level">
+<code class="sig-name descname">get_downsampling_from_level</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">level</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImage.get_downsampling_from_level" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImage.get_downsampling_from_spacing">
+<code class="sig-name descname">get_downsampling_from_spacing</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spacing</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImage.get_downsampling_from_spacing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImage.get_level_from_spacing">
+<code class="sig-name descname">get_level_from_spacing</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spacing</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImage.get_level_from_spacing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImage.get_patch">
+<em class="property">abstract </em><code class="sig-name descname">get_patch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">y</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">width</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">height</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">spacing</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">center</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em>, <em class="sig-param"><span class="n">relative</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">False</span></em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImage.get_patch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImage.level_count">
+<em class="property">property </em><code class="sig-name descname">level_count</code><a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImage.level_count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImage.shapes">
+<em class="property">property </em><code class="sig-name descname">shapes</code><a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImage.shapes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImage.spacings">
+<em class="property">property </em><code class="sig-name descname">spacings</code><a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImage.spacings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImageASAP">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideimage.</code><code class="sig-name descname">WholeSlideImageASAP</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image_path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImageASAP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">multiresolutionimageinterface.MultiResolutionImage</span></code>, <a class="reference internal" href="#batchgenerator.data.wholeslideimage.WholeSlideImage" title="batchgenerator.data.wholeslideimage.WholeSlideImage"><code class="xref py py-class docutils literal notranslate"><span class="pre">batchgenerator.data.wholeslideimage.WholeSlideImage</span></code></a></p>
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImageASAP.get_patch">
+<code class="sig-name descname">get_patch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">y</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">width</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">height</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">spacing</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">center</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em>, <em class="sig-param"><span class="n">relative</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">False</span></em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImageASAP.get_patch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImageOpenSlide">
+<em class="property">class </em><code class="sig-prename descclassname">batchgenerator.data.wholeslideimage.</code><code class="sig-name descname">WholeSlideImageOpenSlide</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image_path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImageOpenSlide" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">openslide.OpenSlide</span></code>, <a class="reference internal" href="#batchgenerator.data.wholeslideimage.WholeSlideImage" title="batchgenerator.data.wholeslideimage.WholeSlideImage"><code class="xref py py-class docutils literal notranslate"><span class="pre">batchgenerator.data.wholeslideimage.WholeSlideImage</span></code></a></p>
+<dl class="py attribute">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImageOpenSlide.EXTENSION_SPACING_KEYS">
+<code class="sig-name descname">EXTENSION_SPACING_KEYS</code><em class="property"> = {'.mrxs': {'unit': 'None', 'xres': 'openslide.mpp-x', 'yres': 'openslide.mpp-y'}, '.tif': {'unit': 'tiff.ResolutionUnit', 'xres': 'tiff.XResolution', 'yres': 'tiff.YResolution'}}</em><a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImageOpenSlide.EXTENSION_SPACING_KEYS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImageOpenSlide.SPACING_UNITS">
+<code class="sig-name descname">SPACING_UNITS</code><em class="property"> = {'centimeter': 10000, 'cm': 10000}</em><a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImageOpenSlide.SPACING_UNITS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="batchgenerator.data.wholeslideimage.WholeSlideImageOpenSlide.get_patch">
+<code class="sig-name descname">get_patch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">y</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">width</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">height</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">spacing</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">center</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em>, <em class="sig-param"><span class="n">relative</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">False</span></em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#batchgenerator.data.wholeslideimage.WholeSlideImageOpenSlide.get_patch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="batchgenerator.data.wholeslideimage.whole_slide_image_factory">
+<code class="sig-prename descclassname">batchgenerator.data.wholeslideimage.</code><code class="sig-name descname">whole_slide_image_factory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">backend</span><span class="o">=</span><span class="default_value">'openslide'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#batchgenerator.data.wholeslideimage.whole_slide_image_factory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-batchgenerator.data">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-batchgenerator.data" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">batchgenerator</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Mart van Rijthoven.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/batchgenerator.data.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
