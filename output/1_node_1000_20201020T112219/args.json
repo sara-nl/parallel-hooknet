@@ -1,0 +1,61 @@
+{
+ "train_data_path": "/home/jorism/hooknet/hooknet-breastdata-annonymized/training/WSIs",
+ "train_annotations_path": "/home/jorism/hooknet/hooknet-breastdata-annonymized/training/XML",
+ "valid_data_path": "/home/jorism/hooknet/hooknet-breastdata-annonymized/validation/WSIs",
+ "valid_annotations_path": "/home/jorism/hooknet/hooknet-breastdata-annonymized/validation/XML",
+ "output_path": "./output",
+ "run_name": "1_node_1000_20201020T112219",
+ "log_every": 50,
+ "input_shape": [
+  284,
+  284,
+  3
+ ],
+ "n_classes": 6,
+ "resolutions": [
+  0.5,
+  8.0
+ ],
+ "hook_indexes": [
+  3,
+  3
+ ],
+ "n_convs": 2,
+ "depth": 4,
+ "n_filters": 64,
+ "filter_size": 3,
+ "padding": "valid",
+ "no_batch_norm": false,
+ "activation": "relu",
+ "learning_rate": 2e-05,
+ "l2_lambda": 0.0001,
+ "opt_name": "adam",
+ "loss_weights": [
+  0.5,
+  0.5
+ ],
+ "merge_type": "concat",
+ "epochs": 200,
+ "steps_per_epoch_train": 1000,
+ "val_steps": 25,
+ "batch_size": 12,
+ "eval_batch_size": 32,
+ "debug": false,
+ "horovod": true,
+ "no_cuda": false,
+ "fp16_allreduce": false,
+ "seed": 1,
+ "epochs_to_save": [
+  197,
+  198,
+  199
+ ],
+ "batch_norm": true,
+ "cuda": true,
+ "output_dir": "./output/1_node_1000_20201020T112219",
+ "output_shape": [
+  70,
+  70,
+  6
+ ]
+}
